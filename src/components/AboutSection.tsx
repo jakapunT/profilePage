@@ -3,25 +3,25 @@ import { Brain, Award, Users, Globe, BookOpen, GraduationCap } from 'lucide-reac
 
 const AboutSection = () => {
   return (
-    <div className="p-8">
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">About Me</h1>
-        <div className="w-16 h-1 bg-blue-600 mb-6"></div>
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="mb-6 lg:mb-8">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">About Me</h1>
+        <div className="w-16 h-1 bg-blue-600 mb-4 lg:mb-6"></div>
       </div>
 
-      <div className="prose prose-lg max-w-none mb-12 text-gray-700 leading-relaxed">
-        <p className="text-xl mb-6">
+      <div className="prose prose-lg max-w-none mb-8 lg:mb-12 text-gray-700 leading-relaxed">
+        <p className="text-lg sm:text-xl mb-4 lg:mb-6">
           I am a passionate researcher in Natural Language Processing with a focus on developing innovative 
           solutions that bridge the gap between human communication and machine understanding.
         </p>
         
-        <p className="mb-6">
+        <p className="mb-4 lg:mb-6">
           My work spans across multiple domains including computational linguistics, machine learning, and artificial intelligence. 
           With over [X] years of experience in academic research, I have contributed to advancing the field 
           through publications in top-tier conferences and journals.
         </p>
         
-        <p className="mb-6">
+        <p className="mb-4 lg:mb-6">
           My research interests include sentiment analysis, machine translation, question answering systems, 
           and large language models. I believe in the power of interdisciplinary collaboration and have worked 
           with teams across computer science, linguistics, and cognitive science to tackle complex challenges 
@@ -30,62 +30,62 @@ const AboutSection = () => {
       </div>
 
       {/* Research Highlights */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Research Highlights</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+      <div className="mb-8 lg:mb-12">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Research Highlights</h2>
+        <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
+          <div className="bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                 <Brain className="text-blue-600" size={20} />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">NLP Research</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900">NLP Research</h3>
             </div>
-            <p className="text-gray-600">Advancing natural language understanding and generation through novel architectures and methodologies.</p>
+            <p className="text-sm sm:text-base text-gray-600">Advancing natural language understanding and generation through novel architectures and methodologies.</p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                 <Award className="text-green-600" size={20} />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">Publications</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900">Publications</h3>
             </div>
-            <p className="text-gray-600">[X]+ papers published in top-tier conferences including ACL, EMNLP, and ICLR.</p>
+            <p className="text-sm sm:text-base text-gray-600">[X]+ papers published in top-tier conferences including ACL, EMNLP, and ICLR.</p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
                 <Users className="text-purple-600" size={20} />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">Collaborations</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900">Collaborations</h3>
             </div>
-            <p className="text-gray-600">Working with leading research institutions and industry partners globally.</p>
+            <p className="text-sm sm:text-base text-gray-600">Working with leading research institutions and industry partners globally.</p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
                 <Globe className="text-orange-600" size={20} />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">Impact</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900">Impact</h3>
             </div>
-            <p className="text-gray-600">Research applied in real-world applications affecting millions of users.</p>
+            <p className="text-sm sm:text-base text-gray-600">Research applied in real-world applications affecting millions of users.</p>
           </div>
         </div>
       </div>
 
       {/* Research Interests */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Research Interests</h2>
-        <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-          <div className="grid md:grid-cols-2 gap-8">
+      <div className="mb-8 lg:mb-12">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Research Interests</h2>
+        <div className="bg-gray-50 rounded-lg p-4 lg:p-6 border border-gray-200">
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <BookOpen size={18} className="text-blue-600" />
                 Core Areas
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-sm sm:text-base text-gray-700">
                 <li>• Natural Language Understanding</li>
                 <li>• Machine Translation</li>
                 <li>• Sentiment Analysis</li>
@@ -95,11 +95,11 @@ const AboutSection = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <GraduationCap size={18} className="text-green-600" />
                 Applications
               </h3>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-sm sm:text-base text-gray-700">
                 <li>• Conversational AI</li>
                 <li>• Information Extraction</li>
                 <li>• Text Summarization</li>
@@ -114,25 +114,25 @@ const AboutSection = () => {
 
       {/* News & Updates */}
       <div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Recent News</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Recent News</h2>
         <div className="space-y-4">
           <div className="border-l-4 border-blue-600 pl-4 py-2">
-            <p className="text-gray-700">
+            <p className="text-sm sm:text-base text-gray-700">
               <span className="font-medium text-gray-900">[Date]:</span> Paper accepted at ICLR 2024: "Efficient Fine-tuning of Large Language Models"
             </p>
           </div>
           <div className="border-l-4 border-green-600 pl-4 py-2">
-            <p className="text-gray-700">
+            <p className="text-sm sm:text-base text-gray-700">
               <span className="font-medium text-gray-900">[Date]:</span> Awarded NSF CAREER Award for research in multilingual NLP
             </p>
           </div>
           <div className="border-l-4 border-purple-600 pl-4 py-2">
-            <p className="text-gray-700">
+            <p className="text-sm sm:text-base text-gray-700">
               <span className="font-medium text-gray-900">[Date]:</span> Keynote speaker at International Conference on Learning Representations
             </p>
           </div>
           <div className="border-l-4 border-orange-600 pl-4 py-2">
-            <p className="text-gray-700">
+            <p className="text-sm sm:text-base text-gray-700">
               <span className="font-medium text-gray-900">[Date]:</span> New collaboration with Google AI on large language model research
             </p>
           </div>

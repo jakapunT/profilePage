@@ -51,33 +51,33 @@ const LabsSection = () => {
   ];
 
   return (
-    <div className="p-8">
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Research Labs & Affiliations</h1>
-        <div className="w-16 h-1 bg-blue-600 mb-6"></div>
-        <p className="text-gray-600 text-lg">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="mb-6 lg:mb-8">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Research Labs & Affiliations</h1>
+        <div className="w-16 h-1 bg-blue-600 mb-4 lg:mb-6"></div>
+        <p className="text-gray-600 text-base sm:text-lg">
           My research journey across leading institutions and laboratories, contributing to advancing the field of Natural Language Processing.
         </p>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-6 lg:space-y-8">
         {labs.map((lab, index) => (
           <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-start justify-between mb-4">
+            <div className="p-4 sm:p-6">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">{lab.name}</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{lab.name}</h2>
                   <div className="flex items-center gap-2 text-gray-600 mb-2">
-                    <Building size={16} />
-                    <span className="font-medium">{lab.institution}</span>
+                    <Building size={16} className="flex-shrink-0" />
+                    <span className="font-medium text-sm sm:text-base">{lab.institution}</span>
                   </div>
-                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500 mb-4">
                     <div className="flex items-center gap-1">
-                      <Calendar size={14} />
+                      <Calendar size={14} className="flex-shrink-0" />
                       <span>{lab.period}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <MapPin size={14} />
+                      <MapPin size={14} className="flex-shrink-0" />
                       <span>{lab.location}</span>
                     </div>
                   </div>
@@ -86,32 +86,32 @@ const LabsSection = () => {
                   href={lab.website} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 transition-colors"
+                  className="text-blue-600 hover:text-blue-800 transition-colors self-start"
                 >
                   <ExternalLink size={20} />
                 </a>
               </div>
 
               <div className="mb-4">
-                <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                   {lab.role}
                 </span>
               </div>
 
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-gray-700 mb-4 lg:mb-6 leading-relaxed text-sm sm:text-base">
                 {lab.description}
               </p>
 
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
                   <Users size={18} className="text-blue-600" />
                   Key Achievements
                 </h3>
-                <div className="grid md:grid-cols-2 gap-3">
+                <div className="grid sm:grid-cols-2 gap-3">
                   {lab.achievements.map((achievement, achievementIndex) => (
                     <div key={achievementIndex} className="flex items-start gap-2">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-700">{achievement}</span>
+                      <span className="text-gray-700 text-sm sm:text-base">{achievement}</span>
                     </div>
                   ))}
                 </div>
@@ -122,18 +122,18 @@ const LabsSection = () => {
       </div>
 
       {/* Current Collaborations */}
-      <div className="mt-12 bg-gray-50 rounded-lg p-6 border border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Current Collaborations</h2>
-        <div className="grid md:grid-cols-2 gap-6">
+      <div className="mt-8 lg:mt-12 bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Current Collaborations</h2>
+        <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
           <div className="bg-white p-4 rounded-lg border border-gray-200">
-            <h3 className="font-semibold text-gray-900 mb-2">International Partnerships</h3>
-            <p className="text-gray-600 text-sm">
+            <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">International Partnerships</h3>
+            <p className="text-gray-600 text-xs sm:text-sm">
               Active collaborations with researchers from Oxford, Cambridge, ETH Zurich, and University of Tokyo.
             </p>
           </div>
           <div className="bg-white p-4 rounded-lg border border-gray-200">
-            <h3 className="font-semibold text-gray-900 mb-2">Industry Connections</h3>
-            <p className="text-gray-600 text-sm">
+            <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Industry Connections</h3>
+            <p className="text-gray-600 text-xs sm:text-sm">
               Ongoing research partnerships with Google AI, Microsoft Research, and OpenAI.
             </p>
           </div>
