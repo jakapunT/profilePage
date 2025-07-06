@@ -3,33 +3,24 @@ import { GraduationCap, Mic, Calendar, Award, Users, BookOpen } from 'lucide-rea
 
 const ActivitiesSection = () => {
   const teachings = [
-    {
-      course: "Natural Language Processing",
-      level: "Graduate",
-      institution: "MIT",
-      period: "Fall 2021 - Present",
-      students: "45-60 students/semester",
-      description: "Comprehensive course covering modern NLP techniques, from traditional methods to transformer architectures."
-    },
-    {
-      course: "Machine Learning for Text Analysis",
-      level: "Undergraduate",
-      institution: "MIT",
-      period: "Spring 2020 - Present",
-      students: "80-100 students/semester",
-      description: "Introduction to ML techniques specifically applied to text data, including classification, clustering, and sequence modeling."
-    },
-    {
-      course: "Computational Linguistics",
-      level: "Graduate",
-      institution: "Stanford University",
-      period: "2018 - 2020",
-      students: "25-35 students/semester",
-      description: "Advanced topics in computational linguistics, syntax parsing, and semantic analysis."
-    }
+    { course: "Web mining", institution: "KMITL", period: "Fall 2022" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2022" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2023" },
+    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2023" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2023" },
+    { course: "Foundation of Programming (international program)", institution: "KMITL", period: "Fall 2023" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2024" },
+    { course: "Database Programming in Practice (international program)", institution: "KMITL", period: "Spring 2024" },
+    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2024" },
+    { course: "Foundation of Programming (international program)", institution: "KMITL", period: "Fall 2024" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2024" },
+    { course: "Data Science Programming & Tools (graduate)", institution: "KMITL", period: "Fall 2024" },
+    { course: "Generative AI (graduate)", institution: "KMITL", period: "Fall 2024" },
+    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2024" },
+    { course: "Large language model (graduate)", institution: "Chulalongkorn", period: "Spring 2025" }
   ];
 
-  const speaking = [
+  const talks = [
     {
       event: "International Conference on Learning Representations (ICLR)",
       title: "Efficient Fine-tuning of Large Language Models",
@@ -63,7 +54,7 @@ const ActivitiesSection = () => {
   return (
     <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6 lg:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Teaching & Speaking</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Teaching & Talks</h1>
         <div className="w-16 h-1 bg-blue-600 mb-4 lg:mb-6"></div>
         <p className="text-gray-600 text-base sm:text-lg">
           My contributions to education and knowledge sharing through teaching and speaking engagements.
@@ -76,42 +67,31 @@ const ActivitiesSection = () => {
           <GraduationCap className="text-blue-600" size={20} sm:size={24} />
           Teaching Experience
         </h2>
-        <div className="space-y-4 lg:space-y-6">
+        <div className="grid gap-3">
           {teachings.map((teaching, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 shadow-sm">
-              <div className="flex flex-col gap-4">
-                <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">{teaching.course}</h3>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-gray-600 mt-2">
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs sm:text-sm font-medium w-fit">
-                      {teaching.level}
-                    </span>
-                    <span className="text-sm sm:text-base">{teaching.institution}</span>
-                  </div>
+            <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div className="flex-1">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900">{teaching.course}</h3>
+                  <p className="text-gray-600 text-sm sm:text-base">{teaching.institution}</p>
                 </div>
-                <div className="grid sm:grid-cols-2 gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600">
-                  <div>
-                    <span className="font-medium">Period:</span> {teaching.period}
-                  </div>
-                  <div>
-                    <span className="font-medium">Enrollment:</span> {teaching.students}
-                  </div>
+                <div className="text-gray-500 text-sm sm:text-base font-medium">
+                  {teaching.period}
                 </div>
-                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{teaching.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Speaking Section */}
+      {/* Talks Section */}
       <div className="mb-8 lg:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6 flex items-center gap-2">
           <Mic className="text-purple-600" size={20} sm:size={24} />
-          Speaking Engagements
+          Talks
         </h2>
         <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
-          {speaking.map((talk, index) => (
+          {talks.map((talk, index) => (
             <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 shadow-sm">
               <div className="flex flex-col gap-4">
                 <div className="flex-1">
@@ -133,8 +113,6 @@ const ActivitiesSection = () => {
           ))}
         </div>
       </div>
-
-
     </div>
   );
 };
