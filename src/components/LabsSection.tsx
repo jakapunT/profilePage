@@ -5,7 +5,7 @@ const LabsSection = () => {
   const currentMembers = [
     { name: "Chinjuta Sa-Ngasaeng", program: "LangTech BA student" },
     { name: "Thanete Wutiwan", program: "LangTech BA student" },
-    { name: "Thachaparn Bunditlurdruk", program: "LangTech BA student" },
+    { name: "Jirapach Rungruengsrisang", program: "LangTech BA student" },
   ];
 
   const alumni = [
