@@ -10,8 +10,7 @@ const LabsSection = () => {
 
   const alumni = [
     
-    { name: "Nanthipat Kongborrirak", program: "LangTech BA", year: "2024", note: },
-  
+    { name: "Nanthipat Kongborrirak", program: "LangTech BA", year: "2024", note:"Assessment of a Large Language Model’s Reading and Comprehension Proficiency in the Thai Language"},
     { name: "Tayawat Songcharoensuk", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
     { name: "Witchaya Panpradit", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
     { name: "Chonnasat Gunngam", program: "ComSci, KMITL", year: "2024", note: "Evaluating Techniques and Methods for Text-to-Image Generation" },
