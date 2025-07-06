@@ -24,32 +24,39 @@ const ActivitiesSection = () => {
 
   const talks = [
     {
-      event: "International Conference on Learning Representations (ICLR)",
-      title: "Efficient Fine-tuning of Large Language Models",
-      type: "Keynote Speaker",
-      date: "May 2024",
-      location: "Vienna, Austria"
+      event: "Thailand Institute of Scientific and Technological Research",
+      title: "Generative AI for daily work",
+      type: "Workshop",
+      date: "April 2025",
+      location: "Thailand"
     },
     {
-      event: "Association for Computational Linguistics (ACL)",
-      title: "The Future of Multilingual NLP",
-      type: "Invited Talk",
-      date: "July 2023",
-      location: "Toronto, Canada"
+      event: "EC GROUP Head Office",
+      title: "Generative AI for daily work",
+      type: "Workshop",
+      date: "Feb 2025",
+      location: "Thailand"
     },
     {
-      event: "NeurIPS Workshop on NLP",
-      title: "Interpretability in Modern NLP Systems",
-      type: "Panel Discussion",
-      date: "December 2023",
-      location: "New Orleans, USA"
+      event: "Thammasat medical school",
+      title: "Intro to LLM and Gen AI workshop",
+      type: "Workshop",
+      date: "July 2025",
+      location: "Thailand"
     },
     {
-      event: "MIT AI Symposium",
-      title: "Building Responsible AI Systems",
-      type: "Keynote Speaker",
-      date: "March 2023",
-      location: "Cambridge, MA"
+      event: "KMITL Virtual Workshop",
+      title: "Accelerating Machine Learning Process with LLMs: Beyond Traditional Task-Specific Training",
+      type: "Virtual Workshop",
+      date: "Sep 2024",
+      location: "Thailand"
+    },
+    {
+      event: "Thailand Institute of Scientific and Technological Research",
+      title: "Generative AI for daily work",
+      type: "Workshop",
+      date: "Sep 2024",
+      location: "Thailand"
     }
   ];
 
