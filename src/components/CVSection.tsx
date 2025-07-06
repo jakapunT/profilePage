@@ -5,27 +5,21 @@ const CVSection = () => {
   const education = [
     {
       degree: "Ph.D. in Computer Science",
-      institution: "University of Edinburgh",
-      period: "2014 - 2018",
-      location: "Edinburgh, UK",
-      thesis: "Neural Machine Translation for Low-Resource Languages",
-      advisor: "Prof. [Advisor Name]"
+      institution: "The University of California, Riverside",
+      period: "2017 - 2022",
+      location: "USA"
     },
     {
       degree: "M.S. in Computer Science",
-      institution: "University of Edinburgh",
-      period: "2012 - 2014",
-      location: "Edinburgh, UK",
-      thesis: "Statistical Machine Translation with Syntactic Features",
-      advisor: "Prof. [Advisor Name]"
+      institution: "The University of Southern California",
+      period: "2014 - 2016",
+      location: "USA"
     },
     {
-      degree: "B.S. in Computer Science",
-      institution: "[Your University]",
-      period: "2008 - 2012",
-      location: "[Your City]",
-      thesis: "Sentiment Analysis of Social Media Data",
-      advisor: "Prof. [Advisor Name]"
+      degree: "B.S. in Computer Engineering",
+      institution: "Chulalongkorn University",
+      period: "2009 - 2012",
+      location: "Thailand"
     }
   ];
 
@@ -164,14 +158,6 @@ const CVSection = () => {
                       <MapPin size={14} className="flex-shrink-0" />
                       <span>{edu.location}</span>
                     </div>
-                  </div>
-                  <div className="mt-3 space-y-1">
-                    <p className="text-gray-700 text-xs sm:text-sm">
-                      <span className="font-medium">Thesis:</span> {edu.thesis}
-                    </p>
-                    <p className="text-gray-700 text-xs sm:text-sm">
-                      <span className="font-medium">Advisor:</span> {edu.advisor}
-                    </p>
                   </div>
                 </div>
               </div>
