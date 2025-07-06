@@ -13,8 +13,8 @@ function App() {
   const tabs = [
     { id: 'about', label: 'About', icon: User },
     { id: 'labs', label: 'Research Labs', icon: Building },
-    { id: 'activities', label: 'Teaching', icon: BookOpen },
     { id: 'publications', label: 'Publications', icon: FileText },
+    { id: 'activities', label: 'Teaching', icon: BookOpen },
     { id: 'cv', label: 'CV', icon: FileText },
   ];
 
