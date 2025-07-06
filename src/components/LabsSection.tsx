@@ -10,14 +10,18 @@ const LabsSection = () => {
 
   const alumni = [
     { name: "Nanthicha Angsuwichitkul", program: "LangTech", year: "2024" },
+
+        { name: "Ponrawee Prasertsom", program: "MA", year: "2021", note: "now at Master's Program at Edinburgh" },
+    { name: "Jitkapat Sawatphol", program: "BA", year: "2020", note: "now at Master's Program at VISTEC" }
+
+    
     { name: "Chadathip Prangkulcharoenkit ", program: "ComSci, KMITL", year: "2023", note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
     { name: "Sirirat Sanghkao", program: "ComSci, KMITL", year: "2023",note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
     { name: "Wanwisa Kawto", program: "ComSci, KMITL", year: "2023", note:"Automated Expert Recommendation Generation for Thai Juvenile Cases using Natural Language Processing"  },
-    { name: "Pontakorn Trakuekul", program: "LangTech", year: "2024" },
-    { name: "Vichayuth Saelao", program: "LangTech", year: "2024" },
+    { name: "Tanawat Kaewmanee", program: "LangTech", year: "2023" ,note:"Headlines Generation for Thai News: Engaging Readers with AI-Generated Titles with Emotions"  },
+    { name: "Tuntorn Chongsakul", program: "LangTech", year: "2023",note:"Headlines Generation for Thai News: Engaging Readers with AI-Generated Titles with Emotions"  },
     { name: "Pattarawat Chormai", program: "Researcher", year: "2018", note: "now at PhD Program at Max-Planck School of Cognition" },
-    { name: "Ponrawee Prasertsom", program: "MA", year: "2021", note: "now at Master's Program at Edinburgh" },
-    { name: "Jitkapat Sawatphol", program: "BA", year: "2020", note: "now at Master's Program at VISTEC" }
+
   ];
 
   return (
