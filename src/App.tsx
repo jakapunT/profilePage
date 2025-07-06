@@ -164,11 +164,11 @@ function App() {
             <div className="space-y-3 mb-8 text-sm">
               <div className="flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors">
                 <Home size={16} className="text-gray-500" />
-                <span>[Your Institution]</span>
+                <span>Linguistic Department, Chulalongkorn University</span>
               </div>
               <div className="flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors">
                 <MapPin size={16} className="text-gray-500" />
-                <span>[Your City, Country]</span>
+                <span>Bangkok, Thailand</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-gray-500" />
