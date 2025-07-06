@@ -3,21 +3,21 @@ import { GraduationCap, Mic, Calendar, Award, Users, BookOpen } from 'lucide-rea
 
 const ActivitiesSection = () => {
   const teachings = [
-    { course: "Web mining", institution: "KMITL", period: "Fall 2022" },
-    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2022" },
-    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2023" },
-    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2023" },
-    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2023" },
-    { course: "Foundation of Programming (international program)", institution: "KMITL", period: "Fall 2023" },
-    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2024" },
-    { course: "Database Programming in Practice (international program)", institution: "KMITL", period: "Spring 2024" },
-    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2024" },
+    { course: "Large language model (graduate)", institution: "Chulalongkorn", period: "Spring 2025" },
     { course: "Foundation of Programming (international program)", institution: "KMITL", period: "Fall 2024" },
     { course: "Intro to NLP", institution: "KMITL", period: "Fall 2024" },
     { course: "Data Science Programming & Tools (graduate)", institution: "KMITL", period: "Fall 2024" },
     { course: "Generative AI (graduate)", institution: "KMITL", period: "Fall 2024" },
     { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2024" },
-    { course: "Large language model (graduate)", institution: "Chulalongkorn", period: "Spring 2025" }
+    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2024" },
+    { course: "Database Programming in Practice (international program)", institution: "KMITL", period: "Spring 2024" },
+    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2024" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2023" },
+    { course: "Foundation of Programming (international program)", institution: "KMITL", period: "Fall 2023" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2023" },
+    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2023" },
+    { course: "Web mining", institution: "KMITL", period: "Fall 2022" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2022" }
   ];
 
   const talks = [
