@@ -14,7 +14,7 @@ const LabsSection = () => {
     { name: "Tayawat Songcharoensuk", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
     { name: "Witchaya Panpradit", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
     { name: "Chonnasat Gunngam", program: "ComSci, KMITL", year: "2024", note: "Evaluating Techniques and Methods for Text-to-Image Generation" },
-    { name: "Chaichan Sampaosong", program: "ComSci, KMITL", year: "2024", note: "Evaluating Techniques and Methods for Text-to-Image Generation"" },
+    { name: "Chaichan Sampaosong", program: "ComSci, KMITL", year: "2024", note: "Evaluating Techniques and Methods for Text-to-Image Generation" },
     { name: "Chadathip Prangkulcharoenkit ", program: "ComSci, KMITL", year: "2023", note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
     { name: "Sirirat Sanghkao", program: "ComSci, KMITL", year: "2023",note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
     { name: "Wanwisa Kawto", program: "ComSci, KMITL", year: "2023", note:"Automated Expert Recommendation Generation for Thai Juvenile Cases using Natural Language Processing"  },
