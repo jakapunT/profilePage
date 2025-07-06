@@ -41,7 +41,7 @@ function App() {
       <div className="lg:hidden bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full overflow-hidden shadow-md">
+            <div className="w-10 h-8 rounded-lg overflow-hidden shadow-md">
               <img 
                 src="/IMG_5438.jpg" 
                 alt="Profile" 
@@ -69,7 +69,7 @@ function App() {
             <div className="p-6 overflow-y-auto h-full">
               {/* Profile Section */}
               <div className="text-center mb-6">
-                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg mb-4">
+                <div className="w-32 h-40 mx-auto rounded-lg overflow-hidden shadow-lg mb-4">
                   <img 
                     src="/IMG_5438.jpg" 
                     alt="Profile" 
@@ -149,7 +149,7 @@ function App() {
           <div className="p-6">
             {/* Profile Image */}
             <div className="text-center mb-6">
-              <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg mb-4 transition-transform duration-300 hover:scale-105 ring-4 ring-white">
+              <div className="w-48 h-60 mx-auto rounded-lg overflow-hidden shadow-lg mb-4 transition-transform duration-300 hover:scale-105 ring-4 ring-white">
                 <img 
                   src="/IMG_5438.jpg" 
                   alt="Profile" 
