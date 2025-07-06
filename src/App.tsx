@@ -41,8 +41,12 @@ function App() {
       <div className="lg:hidden bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full flex items-center justify-center text-white text-sm font-medium shadow-md">
-              JD
+            <div className="w-10 h-10 rounded-full overflow-hidden shadow-md">
+              <img 
+                src="/IMG_5438.jpg" 
+                alt="Profile" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 className="text-lg font-bold text-gray-900">Dr. [Your Name]</h1>
@@ -65,8 +69,12 @@ function App() {
             <div className="p-6 overflow-y-auto h-full">
               {/* Profile Section */}
               <div className="text-center mb-6">
-                <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full flex items-center justify-center text-white text-4xl font-light shadow-lg mb-4">
-                  JD
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg mb-4">
+                  <img 
+                    src="/IMG_5438.jpg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h1 className="text-xl font-bold text-gray-900 mb-1">Dr. [Your Name]</h1>
                 <p className="text-gray-600 text-sm">Natural Language Processing Researcher</p>
@@ -141,8 +149,12 @@ function App() {
           <div className="p-6">
             {/* Profile Image */}
             <div className="text-center mb-6">
-              <div className="w-48 h-48 mx-auto bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full flex items-center justify-center text-white text-6xl font-light shadow-lg mb-4 transition-transform duration-300 hover:scale-105">
-                JD
+              <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg mb-4 transition-transform duration-300 hover:scale-105 ring-4 ring-white">
+                <img 
+                  src="/IMG_5438.jpg" 
+                  alt="Profile" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h1 className="text-2xl font-bold text-gray-900 mb-1">Dr. [Your Name]</h1>
               <p className="text-gray-600 text-sm">Natural Language Processing Researcher</p>
