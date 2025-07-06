@@ -11,8 +11,8 @@ const LabsSection = () => {
   const alumni = [
     { name: "Nanthicha Angsuwichitkul", program: "LangTech", year: "2024" },
 
-    { name: "Ponrawee Prasertsom", program: "MA", year: "2021", note: "now at Master's Program at Edinburgh" },
-    { name: "Jitkapat Sawatphol", program: "BA", year: "2020", note: "now at Master's Program at VISTEC" },
+    { name: "Ponrawee Prasertsom", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
+    { name: "Jitkapat Sawatphol", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
 
     
     { name: "Chadathip Prangkulcharoenkit ", program: "ComSci, KMITL", year: "2023", note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
