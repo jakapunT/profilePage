@@ -178,19 +178,6 @@ function App() {
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="flex gap-4 mb-8 justify-center">
-              <a href="https://github.com/yourusername" className="text-gray-600 hover:text-gray-900 transition-all duration-200 hover:scale-110">
-                <Github size={20} />
-              </a>
-              <a href="https://linkedin.com/in/yourprofile" className="text-gray-600 hover:text-gray-900 transition-all duration-200 hover:scale-110">
-                <Linkedin size={20} />
-              </a>
-              <a href="https://twitter.com/yourusername" className="text-gray-600 hover:text-gray-900 transition-all duration-200 hover:scale-110">
-                <Twitter size={20} />
-              </a>
-            </div>
-
             {/* Navigation */}
             <nav className="space-y-1">
               {tabs.map((tab) => {
