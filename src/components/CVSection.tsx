@@ -132,7 +132,9 @@ const CVSection = () => {
         </div>
         <button className="flex items-center gap-2 bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base w-fit">
           <Download size={16} sm:size={20} />
-          Download PDF
+          <a href="/Jakapun CV.pdf" download="Jakapun_Tachaiya_CV.pdf" className="flex items-center gap-2">
+            Download PDF
+          </a>
         </button>
       </div>
 
