@@ -67,10 +67,16 @@ const AboutSection = () => {
               </h3>
               <ul className="space-y-2 text-sm sm:text-base text-gray-700">
                 <li>• Large Language Models</li>
+                <li>• Retrieval-Augmented Generation (RAG)</li>
                 <li>• Natural Language Understanding</li>
                 <li>• Sentiment Analysis</li>
+                 <li>•Social trend and behavior analysis</li>
                 <li>• Machine Learning</li>
                 <li>• Data Science</li>
+ 
+                
+
+
               </ul>
             </div>
             <div>
