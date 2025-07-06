@@ -120,7 +120,7 @@ const LabsSection = () => {
             Principal Investigator
           </h2>
           <div className="text-lg text-gray-700 font-medium">
-            Attapol Thamrongrattanarit-Rutherford
+            Jakapun Tachaiya
           </div>
         </div>
       </div>
