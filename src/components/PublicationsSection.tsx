@@ -173,38 +173,7 @@ const PublicationsSection = () => {
         </div>
       </div>
 
-      {/* External Links */}
-      <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">External Profiles</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a 
-            href="#" 
-            className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all"
-          >
-            <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-              <ExternalLink className="text-blue-600" size={16} />
-            </div>
-            <span className="font-medium text-gray-900">Google Scholar</span>
-          </a>
-          <a 
-            href="#" 
-            className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-purple-300 hover:shadow-sm transition-all"
-          >
-            <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
-              <ExternalLink className="text-purple-600" size={16} />
-            </div>
-            <span className="font-medium text-gray-900">DBLP</span>
-          </a>
-          <a 
-            href="#" 
-            className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-green-300 hover:shadow-sm transition-all"
-          >
-            <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
-              <ExternalLink className="text-green-600" size={16} />
-            </div>
-            <span className="font-medium text-gray-900">ResearchGate</span>
-          </a>
-        </div>
+    
       </div>
     </div>
   );
