@@ -3,13 +3,12 @@ import { Building, Calendar, ExternalLink, Users, MapPin, GraduationCap, BookOpe
 
 const LabsSection = () => {
   const currentMembers = [
-    { name: "Pawitsapak Akarajaradwong", program: "LangTech BAstudent" },
+    { name: "Pawitsapak Akarajaradwong", program: "LangTech BA student" },
     { name: "Pakawadee Pamorn", program: "LangTech BA student" },
     { name: "Thachaparn Bunditlurdruk", program: "LangTech BA student" },
   ];
 
   const alumni = [
-    
     { name: "Nanthipat Kongborrirak", program: "LangTech BA", year: "2024", note:"Assessment of a Large Language Model’s Reading and Comprehension Proficiency in the Thai Language"},
     { name: "Tayawat Songcharoensuk", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
     { name: "Witchaya Panpradit", program: "ComSci, KMITL", year: "2024", note: "Developing Aspect-Based Sentiment Analysis Methods Through Prompt Engineering" },
