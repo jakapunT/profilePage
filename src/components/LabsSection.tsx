@@ -1,53 +1,34 @@
 import React from 'react';
-import { Building, Calendar, ExternalLink, Users, MapPin, GraduationCap, BookOpen, Award } from 'lucide-react';
+import { Building, Calendar, ExternalLink, Users, MapPin, GraduationCap, BookOpen, Award, User } from 'lucide-react';
 
 const LabsSection = () => {
-  const labs = [
-    {
-      name: "Advanced NLP Research Lab",
-      institution: "MIT Computer Science and Artificial Intelligence Laboratory",
-      role: "Research Scientist",
-      period: "2020 - Present",
-      location: "Cambridge, MA",
-      description: "Leading research in large language models and their applications in real-world scenarios. Focus on developing more efficient and interpretable NLP systems.",
-      achievements: [
-        "Led a team of 8 researchers and PhD students",
-        "Published 12 papers in top-tier conferences",
-        "Secured $2.5M in research funding",
-        "Developed novel transformer architectures"
-      ],
-      website: "https://www.csail.mit.edu/"
-    },
-    {
-      name: "Human-Computer Interaction Lab",
-      institution: "Stanford University",
-      role: "Postdoctoral Researcher",
-      period: "2018 - 2020",
-      location: "Stanford, CA",
-      description: "Focused on developing natural language interfaces for human-computer interaction. Worked on multimodal systems combining text, speech, and vision.",
-      achievements: [
-        "Developed multilingual dialogue systems",
-        "Collaborated with industry partners (Google, Microsoft)",
-        "Published 8 papers in ACL, EMNLP, and CHI",
-        "Mentored 5 graduate students"
-      ],
-      website: "https://hci.stanford.edu/"
-    },
-    {
-      name: "Computational Linguistics Research Group",
-      institution: "University of Edinburgh",
-      role: "PhD Student & Research Assistant",
-      period: "2014 - 2018",
-      location: "Edinburgh, UK",
-      description: "Conducted doctoral research on machine translation and cross-lingual understanding. Specialized in low-resource language processing and domain adaptation.",
-      achievements: [
-        "Completed PhD thesis on 'Neural Machine Translation for Low-Resource Languages'",
-        "Won Best Paper Award at EACL 2017",
-        "Contributed to open-source MT toolkit",
-        "Taught undergraduate courses in NLP"
-      ],
-      website: "https://www.ed.ac.uk/informatics/research/groups/ilcc"
-    }
+  const currentMembers = [
+    { name: "Pawitsapak Akarajaradwong", program: "Linguistics MA student" },
+    { name: "Pakawadee Pamorn", program: "Linguistics MA student" },
+    { name: "Thachaparn Bunditlurdruk", program: "Linguistics MA student" },
+    { name: "Natanan Lertnanawong", program: "Linguistics MA student" },
+    { name: "Nipun Angkavichai", program: "LangTech BA student" }
+  ];
+
+  const alumni = [
+    { name: "Nanthicha Angsuwichitkul", program: "LangTech", year: "2024" },
+    { name: "Panyut Sriwirote", program: "LangTech", year: "2024" },
+    { name: "Warisaraporn Limprasert", program: "LangTech", year: "2024" },
+    { name: "Supitcha Sokrai", program: "LangTech", year: "2024" },
+    { name: "Pontakorn Trakuekul", program: "LangTech", year: "2024" },
+    { name: "Vichayuth Saelao", program: "LangTech", year: "2024" },
+    { name: "Natchanon Pollertlam", program: "LangTech", year: "2023" },
+    { name: "Narongkorn Panitsrisit", program: "Linguistics MA", year: "2023" },
+    { name: "Wassakorn Sarakul", program: "Linguistics MA", year: "2023" },
+    { name: "Apiwat Jaroonpol", program: "Data Scientist", year: "2022" },
+    { name: "Jin Cheevaprawatdomrong", program: "Linguistics MA", year: "2022" },
+    { name: "Sumana Sumanakul", program: "Linguistics MA", year: "2022" },
+    { name: "Kedsaraporn Ruechai", program: "LangTech", year: "2022" },
+    { name: "Paween Manakul", program: "LangTech", year: "2022" },
+    { name: "Sadanan Arsaibun", program: "LangTech", year: "2022" },
+    { name: "Pattarawat Chormai", program: "Researcher", year: "2018", note: "now at PhD Program at Max-Planck School of Cognition" },
+    { name: "Ponrawee Prasertsom", program: "MA", year: "2021", note: "now at Master's Program at Edinburgh" },
+    { name: "Jitkapat Sawatphol", program: "BA", year: "2020", note: "now at Master's Program at VISTEC" }
   ];
 
   return (
@@ -128,74 +109,78 @@ const LabsSection = () => {
               </div>
             </div>
           </div>
-
-          {/* Contact CTA */}
-          
         </div>
       </div>
 
-      <div className="space-y-6 lg:space-y-8">
-        {labs.map((lab, index) => (
-          <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-            <div className="p-4 sm:p-6">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
-                <div className="flex-1">
-                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{lab.name}</h2>
-                  <div className="flex items-center gap-2 text-gray-600 mb-2">
-                    <Building size={16} className="flex-shrink-0" />
-                    <span className="font-medium text-sm sm:text-base">{lab.institution}</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500 mb-4">
-                    <div className="flex items-center gap-1">
-                      <Calendar size={14} className="flex-shrink-0" />
-                      <span>{lab.period}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <MapPin size={14} className="flex-shrink-0" />
-                      <span>{lab.location}</span>
-                    </div>
-                  </div>
-                </div>
-                <a 
-                  href={lab.website} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 transition-colors self-start"
-                >
-                  <ExternalLink size={20} />
-                </a>
-              </div>
-
-              <div className="mb-4">
-                <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
-                  {lab.role}
-                </span>
-              </div>
-
-              <p className="text-gray-700 mb-4 lg:mb-6 leading-relaxed text-sm sm:text-base">
-                {lab.description}
-              </p>
-
-              <div>
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                  <Users size={18} className="text-blue-600" />
-                  Key Achievements
-                </h3>
-                <div className="grid sm:grid-cols-2 gap-3">
-                  {lab.achievements.map((achievement, achievementIndex) => (
-                    <div key={achievementIndex} className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-700 text-sm sm:text-base">{achievement}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+      {/* Principal Investigator */}
+      <div className="mb-8 lg:mb-12">
+        <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <User className="text-blue-600" size={24} />
+            Principal Investigator
+          </h2>
+          <div className="text-lg text-gray-700 font-medium">
+            Attapol Thamrongrattanarit-Rutherford
           </div>
-        ))}
+        </div>
       </div>
 
+      {/* Current Lab Members */}
+      <div className="mb-8 lg:mb-12">
+        <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 border-b border-gray-200">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              <Users className="text-green-600" size={24} />
+              Current Lab Members
+            </h2>
+          </div>
+          <div className="p-6">
+            <div className="grid gap-3">
+              {currentMembers.map((member, index) => (
+                <div key={index} className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                  <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                  <div className="flex-1">
+                    <span className="font-medium text-gray-900">{member.name}</span>
+                    <span className="text-gray-600 ml-2">-- {member.program}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
 
+      {/* Lab Alumni */}
+      <div className="mb-8 lg:mb-12">
+        <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 border-b border-gray-200">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              <GraduationCap className="text-blue-600" size={24} />
+              Lab Alumni
+            </h2>
+          </div>
+          <div className="p-6">
+            <div className="grid gap-3">
+              {alumni.map((alum, index) => (
+                <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></div>
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="font-medium text-gray-900">{alum.name}</span>
+                      <span className="text-gray-600">-- {alum.program} {alum.year}</span>
+                    </div>
+                    {alum.note && (
+                      <div className="text-sm text-gray-500 mt-1 italic">
+                        {alum.note}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
