@@ -130,12 +130,7 @@ const LabsSection = () => {
           </div>
 
           {/* Contact CTA */}
-          <div className="text-center mt-8">
-            <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors cursor-pointer shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
-           
-             
-            </div>
-          </div>
+          
         </div>
       </div>
 
