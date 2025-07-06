@@ -173,12 +173,8 @@ function App() {
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-gray-500" />
                 <a href="mailto:your.email@university.edu" className="text-blue-600 hover:text-blue-800 transition-colors">
-                  your.email@university.edu
+                 jakapun.t@chula.ac.th
                 </a>
-              </div>
-              <div className="flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors">
-                <Phone size={16} className="text-gray-500" />
-                <span>+1 (555) 123-4567</span>
               </div>
             </div>
 
