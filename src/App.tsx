@@ -72,7 +72,7 @@ function App() {
           <div className="fixed inset-y-0 left-0 w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out" onClick={(e) => e.stopPropagation()}>
             <div className="p-6 overflow-y-auto h-full">
               {/* Profile Section */}
-              <div className="text-center mb-6 pt-8">
+              <div className="text-center mb-6 pt-20">
                 <div className="w-32 h-40 mx-auto rounded-lg overflow-hidden shadow-lg mb-4">
                   <img 
                     src="IMG_5438.jpg" 
@@ -81,7 +81,6 @@ function App() {
                   />
                 </div>
                 <h1 className="text-xl font-bold text-gray-900 mb-1">Jakapun Tachaiya</h1>
-                <p className="text-gray-600 text-sm">Natural Language Processing Researcher</p>
               </div>
 
 
