@@ -3,6 +3,8 @@ import { GraduationCap, Mic, Calendar, Award, Users, BookOpen } from 'lucide-rea
 
 const ActivitiesSection = () => {
   const teachings = [
+    { course: "Statistics for Digital Humanities", institution: "Chulalongkorn", period: "Fall 2025" },
+    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2025" },
     { course: "Large language model (graduate)", institution: "Chulalongkorn", period: "Spring 2025" },
     { course: "Foundation of Programming (international program)", institution: "KMITL", period: "Fall 2024" },
     { course: "Intro to NLP", institution: "KMITL", period: "Fall 2024" },
