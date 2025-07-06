@@ -76,25 +76,25 @@ const ActivitiesSection = () => {
                 <div className="flex-1">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">{teaching.course}</h3>
                   <p className="text-gray-600 text-sm sm:text-base">{teaching.institution}</p>
-                </div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-gray-500 text-sm font-medium">
-                    {teaching.period}
-                  </span>
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                    teaching.level === 'Graduate' 
-                      ? 'bg-purple-100 text-purple-800' 
-                      : 'bg-blue-100 text-blue-800'
-                  }`}>
-                    {teaching.level}
-                  </span>
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                    teaching.program === 'International' 
-                      ? 'bg-green-100 text-green-800' 
-                      : 'bg-orange-100 text-orange-800'
-                  }`}>
-                    {teaching.program}
-                  </span>
+                  <div className="flex flex-wrap items-center gap-2 mt-2">
+                    <span className="text-gray-500 text-sm font-medium">
+                      {teaching.period}
+                    </span>
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      teaching.level === 'Graduate' 
+                        ? 'bg-purple-100 text-purple-800' 
+                        : 'bg-blue-100 text-blue-800'
+                    }`}>
+                      {teaching.level}
+                    </span>
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      teaching.program === 'International' 
+                        ? 'bg-green-100 text-green-800' 
+                        : 'bg-orange-100 text-orange-800'
+                    }`}>
+                      {teaching.program}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
