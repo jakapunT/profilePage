@@ -50,7 +50,7 @@ const AboutSection = () => {
               </div>
               <h3 className="text-base sm:text-lg font-semibold text-gray-900">Impact</h3>
             </div>
-            <p className="text-sm sm:text-base text-gray-600">Research applied in real-world applications affecting millions of users.</p>
+            <p className="text-sm sm:text-base text-gray-600">Research applied in real-world settings, benefiting a large number of users.</p>
           </div>
         </div>
       </div>
