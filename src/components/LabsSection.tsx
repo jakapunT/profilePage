@@ -196,6 +196,7 @@ const LabsSection = () => {
       </div>
 
 
+    </div>
   );
 };
 
