@@ -134,28 +134,7 @@ const ActivitiesSection = () => {
         </div>
       </div>
 
-      {/* Statistics */}
-      <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Impact Summary</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-6">
-          <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">500+</div>
-            <div className="text-gray-600 text-xs sm:text-sm">Students Taught</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-2">25+</div>
-            <div className="text-gray-600 text-xs sm:text-sm">Publications</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">25+</div>
-            <div className="text-gray-600 text-xs sm:text-sm">Speaking Events</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-2">12</div>
-            <div className="text-gray-600 text-xs sm:text-sm">Courses Developed</div>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };
