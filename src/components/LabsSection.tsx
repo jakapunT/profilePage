@@ -4,7 +4,7 @@ import { Building, Calendar, ExternalLink, Users, MapPin, GraduationCap, BookOpe
 const LabsSection = () => {
   const currentMembers = [
     { name: "Chinjuta Sa-Ngasaeng", program: "LangTech BA student" },
-    { name: "Pakawadee Pamorn", program: "LangTech BA student" },
+    { name: "Thanete Wutiwan", program: "LangTech BA student" },
     { name: "Thachaparn Bunditlurdruk", program: "LangTech BA student" },
   ];
 
