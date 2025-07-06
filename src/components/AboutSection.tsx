@@ -11,22 +11,14 @@ const AboutSection = () => {
 
       <div className="prose prose-lg max-w-none mb-8 lg:mb-12 text-gray-700 leading-relaxed">
         <p className="text-lg sm:text-xl mb-4 lg:mb-6">
-          I am a passionate researcher in Natural Language Processing with a focus on developing innovative 
-          solutions that bridge the gap between human communication and machine understanding.
+          I am a faculty member in the Linguistics Department at the Faculty of Arts, Chulalongkorn University. I am fascinated by how computers can be made to understand human language, a task inherently ambiguous and challenging, even among humans. Even when the same sentence is used, we as humans can still misinterpret and misunderstand each other.
         </p>
         
         <p className="mb-4 lg:mb-6">
-          My work spans across multiple domains including computational linguistics, machine learning, and artificial intelligence. 
-          With over [X] years of experience in academic research, I have contributed to advancing the field 
-          through publications in top-tier conferences and journals.
+    This deep interest drives my work as a dedicated researcher with a primary focus on Natural Language Processing (NLP), the technology enabling computers to comprehend and execute language-based tasks such as question answering, text translation, and large-scale text analysis. My current research interests revolve around developing NLP with Large Language Models (LLMs), specifically focusing on the Thai language. Please feel free to contact me if you are interested in a collaboration in this related field.
         </p>
         
-        <p className="mb-4 lg:mb-6">
-          My research interests include sentiment analysis, machine translation, question answering systems, 
-          and large language models. I believe in the power of interdisciplinary collaboration and have worked 
-          with teams across computer science, linguistics, and cognitive science to tackle complex challenges 
-          in natural language understanding.
-        </p>
+ 
       </div>
 
       {/* Research Highlights */}
