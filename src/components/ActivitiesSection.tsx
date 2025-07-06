@@ -117,24 +117,22 @@ const ActivitiesSection = () => {
           <Mic className="text-purple-600" size={20} sm:size={24} />
           Talks
         </h2>
-        <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {talks.map((talk, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 shadow-sm">
-              <div className="flex flex-col gap-4">
-                <div className="flex-1">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{talk.title}</h3>
-                  <p className="text-gray-600 font-medium mb-2 text-sm sm:text-base">{talk.event}</p>
-                  <div className="flex items-center gap-2 text-gray-500 text-xs sm:text-sm mb-2">
-                    <Calendar size={14} className="flex-shrink-0" />
-                    <span>{talk.date}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-gray-500 text-xs sm:text-sm mb-3">
-                    <span>{talk.location}</span>
+            <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-col gap-3">
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900 mb-2 leading-tight">{talk.title}</h3>
+                  <p className="text-gray-600 font-medium mb-3 text-sm">{talk.event}</p>
+                  <div className="flex flex-wrap items-center gap-2 text-xs">
+                    <span className="text-gray-500">{talk.date}</span>
+                    <span className="text-gray-500">•</span>
+                    <span className="text-gray-500">{talk.location}</span>
+                    <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded-full font-medium">
+                      {talk.type}
+                    </span>
                   </div>
                 </div>
-                <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium w-fit">
-                  {talk.type}
-                </span>
               </div>
             </div>
           ))}
