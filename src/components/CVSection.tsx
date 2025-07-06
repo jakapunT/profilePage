@@ -26,39 +26,38 @@ const CVSection = () => {
 
   const experience = [
     {
-      position: "Research Scientist",
-      organization: "MIT Computer Science and Artificial Intelligence Laboratory",
-      period: "2020 - Present",
-      location: "Cambridge, MA",
+      position: "Full-time lecturer",
+      organization: "Linguistics Department, Chulalongkorn University",
+      period: "2025 - ongoing",
+      location: "Thailand",
       responsibilities: [
-        "Lead research team of 8 researchers and PhD students",
-        "Develop novel NLP architectures and algorithms",
-        "Publish research in top-tier conferences and journals",
-        "Collaborate with industry partners on applied research"
       ]
     },
     {
-      position: "Postdoctoral Researcher",
-      organization: "Stanford University",
-      period: "2018 - 2020",
-      location: "Stanford, CA",
+      position: "Full-time lecturer",
+      organization: "Computer Science Department, KMITL",
+      period: "2023 - 2025",
+      location: "Thailand",
       responsibilities: [
-        "Conducted research on multimodal NLP systems",
-        "Developed natural language interfaces for HCI",
-        "Mentored graduate students and research assistants",
-        "Secured research funding through grant proposals"
+      ]
+    },
+    {
+      position: "Research Lab Leader",
+      organization: "UC Riverside",
+      period: "2021 - 2022",
+      location: "USA",
+      responsibilities: [
+        "Spearheaded a team of students in executing data science projects focused on the analysis of social media information",
+        "Played a pivotal role in securing and contributing to a grant awarded by the National Science Foundation (NSF)"
       ]
     },
     {
       position: "Research Assistant",
-      organization: "University of Edinburgh",
-      period: "2014 - 2018",
-      location: "Edinburgh, UK",
+      organization: "Spatial Sciences Institute, USC",
+      period: "2016 - 2017",
+      location: "USA",
       responsibilities: [
-        "Conducted doctoral research on machine translation",
-        "Taught undergraduate courses in NLP and linguistics",
-        "Contributed to open-source NLP tools and datasets",
-        "Presented research at international conferences"
+        "Specialized in the interpretation and analysis of spatial data utilizing advanced NoSQL techniques"
       ]
     }
   ];
@@ -178,7 +177,7 @@ const CVSection = () => {
       <div className="mb-8 lg:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6 flex items-center gap-2">
           <Briefcase className="text-green-600" size={20} sm:size={24} />
-          Professional Experience
+          Work History
         </h2>
         <div className="space-y-4 lg:space-y-6">
           {experience.map((exp, index) => (
@@ -199,16 +198,18 @@ const CVSection = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                <ul className="space-y-2">
-                  {exp.responsibilities.map((resp, respIndex) => (
-                    <li key={respIndex} className="flex items-start gap-2 text-gray-700">
-                      <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm sm:text-base">{resp}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {exp.responsibilities.length > 0 && (
+                <div>
+                  <ul className="space-y-2">
+                    {exp.responsibilities.map((resp, respIndex) => (
+                      <li key={respIndex} className="flex items-start gap-2 text-gray-700">
+                        <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-sm sm:text-base">{resp}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           ))}
         </div>
