@@ -10,20 +10,11 @@ const LabsSection = () => {
 
   const alumni = [
     { name: "Nanthicha Angsuwichitkul", program: "LangTech", year: "2024" },
-    { name: "Panyut Sriwirote", program: "LangTech", year: "2024" },
-    { name: "Warisaraporn Limprasert", program: "LangTech", year: "2024" },
-    { name: "Supitcha Sokrai", program: "LangTech", year: "2024" },
+    { name: "Chadathip Prangkulcharoenkit ", program: "ComSci, KMITL", year: "2023", note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
+    { name: "Sirirat Sanghkao", program: "ComSci, KMITL", year: "2023",note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
+    { name: "Wanwisa Kawto", program: "ComSci, KMITL", year: "2023", note:"Automated Expert Recommendation Generation for Thai Juvenile Cases using Natural Language Processing"  },
     { name: "Pontakorn Trakuekul", program: "LangTech", year: "2024" },
     { name: "Vichayuth Saelao", program: "LangTech", year: "2024" },
-    { name: "Natchanon Pollertlam", program: "LangTech", year: "2023" },
-    { name: "Narongkorn Panitsrisit", program: "Linguistics MA", year: "2023" },
-    { name: "Wassakorn Sarakul", program: "Linguistics MA", year: "2023" },
-    { name: "Apiwat Jaroonpol", program: "Data Scientist", year: "2022" },
-    { name: "Jin Cheevaprawatdomrong", program: "Linguistics MA", year: "2022" },
-    { name: "Sumana Sumanakul", program: "Linguistics MA", year: "2022" },
-    { name: "Kedsaraporn Ruechai", program: "LangTech", year: "2022" },
-    { name: "Paween Manakul", program: "LangTech", year: "2022" },
-    { name: "Sadanan Arsaibun", program: "LangTech", year: "2022" },
     { name: "Pattarawat Chormai", program: "Researcher", year: "2018", note: "now at PhD Program at Max-Planck School of Cognition" },
     { name: "Ponrawee Prasertsom", program: "MA", year: "2021", note: "now at Master's Program at Edinburgh" },
     { name: "Jitkapat Sawatphol", program: "BA", year: "2020", note: "now at Master's Program at VISTEC" }
