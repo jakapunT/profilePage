@@ -108,30 +108,28 @@ const PublicationsSection = () => {
         </p>
       </div>
 
-      {/* Publication Statistics */}
+      {/* ORCID ID Section */}
       <div className="mb-8 lg:mb-12">
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-gray-200">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <Award className="text-blue-600" size={20} sm:size={24} />
-            Publication Metrics
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-6">
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">{stats.totalPapers}</div>
-              <div className="text-gray-600 text-xs sm:text-sm">Total Papers</div>
+        <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-gray-200">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">ORCID Profile</h2>
+              <p className="text-gray-600">View my complete publication record and research contributions</p>
             </div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-2">{stats.totalCitations}</div>
-              <div className="text-gray-600 text-xs sm:text-sm">Total Citations</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">{stats.hIndex}</div>
-              <div className="text-gray-600 text-xs sm:text-sm">h-index</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-2">{stats.i10Index}</div>
-              <div className="text-gray-600 text-xs sm:text-sm">i10-index</div>
-            </div>
+            <a 
+              href="https://orcid.org/0000-0001-9779-1571"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 bg-white hover:bg-gray-50 border border-gray-200 hover:border-green-300 px-6 py-3 rounded-lg transition-all shadow-sm hover:shadow-md w-fit"
+            >
+              <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                <ExternalLink className="text-green-600" size={16} />
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-gray-900">ORCID iD</div>
+                <div className="text-sm text-gray-600">0000-0001-9779-1571</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
