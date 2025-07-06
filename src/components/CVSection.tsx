@@ -7,7 +7,8 @@ const CVSection = () => {
       degree: "Ph.D. in Computer Science",
       institution: "The University of California, Riverside",
       period: "2017 - 2022",
-      location: "USA"
+      location: "USA",
+      advisor: "Michalis Faloutsos"
     },
     {
       degree: "M.S. in Computer Science",
@@ -159,6 +160,13 @@ const CVSection = () => {
                       <span>{edu.location}</span>
                     </div>
                   </div>
+                  {edu.advisor && (
+                    <div className="mt-3">
+                      <p className="text-gray-700 text-xs sm:text-sm">
+                        <span className="font-medium">Advisor:</span> {edu.advisor}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
