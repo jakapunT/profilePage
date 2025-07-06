@@ -47,8 +47,8 @@ const CVSection = () => {
       period: "2021 - 2022",
       location: "USA",
       responsibilities: [
-        "Spearheaded a team of students in executing data science projects focused on the analysis of social media information",
-        "Played a pivotal role in securing and contributing to a grant awarded by the National Science Foundation (NSF)"
+        "Spearheaded a team of students in executing data science projects focused on the analysis of social media information.",
+        "Played a pivotal role in securing and contributing to a grant awarded by the National Science Foundation (NSF)."
       ]
     },
     {
@@ -57,7 +57,7 @@ const CVSection = () => {
       period: "2016 - 2017",
       location: "USA",
       responsibilities: [
-        "Specialized in the interpretation and analysis of spatial data utilizing advanced NoSQL techniques"
+        "Specialized in the interpretation and analysis of spatial data utilizing advanced NoSQL techniques."
       ]
     }
   ];
