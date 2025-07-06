@@ -57,7 +57,11 @@ const LabsSection = () => {
         <p>Department of Linguistics, Faculty of Arts, Chulalongkorn University</p>
         <div className="w-16 h-1 bg-blue-600 mb-4 lg:mb-6"></div>
         <p className="text-gray-600 text-base sm:text-lg">
-          My research journey across leading institutions and laboratories, contributing to advancing the field of Natural Language Processing.
+         The Natural Language Processing Lab focuses on advancing Thai NLP infrastructure, including automated linguistic analysis and the development of Large Language Models specifically for the Thai language.
+
+Prospective Master's students interested in joining the lab are encouraged to consider the Linguistics program's "แผน ข" for its flexibility. This program provides comprehensive training, from foundational programming to the implementation of neural language models. A sample study plan is available for reference.
+
+For those pursuing a PhD, a strong background in programming and machine learning is generally expected, though direct discussion via email for potential projects is also welcome.
         </p>
       </div>
 
