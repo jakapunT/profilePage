@@ -195,25 +195,7 @@ const LabsSection = () => {
         ))}
       </div>
 
-      {/* Current Collaborations */}
-      <div className="mt-8 lg:mt-12 bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Current Collaborations</h2>
-        <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
-          <div className="bg-white p-4 rounded-lg border border-gray-200">
-            <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">International Partnerships</h3>
-            <p className="text-gray-600 text-xs sm:text-sm">
-              Active collaborations with researchers from Oxford, Cambridge, ETH Zurich, and University of Tokyo.
-            </p>
-          </div>
-          <div className="bg-white p-4 rounded-lg border border-gray-200">
-            <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Industry Connections</h3>
-            <p className="text-gray-600 text-xs sm:text-sm">
-              Ongoing research partnerships with Google AI, Microsoft Research, and OpenAI.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+
   );
 };
 
