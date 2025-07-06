@@ -3,23 +3,23 @@ import { GraduationCap, Mic, Calendar, Award, Users, BookOpen } from 'lucide-rea
 
 const ActivitiesSection = () => {
   const teachings = [
-    { course: "Statistics for Digital Humanities", institution: "Chulalongkorn", period: "Fall 2025" },
-    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2025" },
-    { course: "Large language model (Graduate)", institution: "Chulalongkorn", period: "Spring 2025" },
-    { course: "Foundation of Programming (International Program)", institution: "KMITL", period: "Fall 2024" },
-    { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Fall 2024" },
-    { course: "Data Science Programming & Tools (graduate)", institution: "KMITL", period: "Fall 2024" },
-    { course: "Generative AI (graduate)", institution: "KMITL", period: "Fall 2024" },
-    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2024" },
-    { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Spring 2024" },
-    { course: "Database Programming in Practice (international program)", institution: "KMITL", period: "Spring 2024" },
-    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2024" },
-    { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Fall 2023" },
-    { course: "Foundation of Programming (international program)", institution: "KMITL", period: "Fall 2023" },
-    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2023" },
-    { course: "Intro to data science (international program)", institution: "KMITL", period: "Spring 2023" },
-    { course: "Web mining", institution: "KMITL", period: "Fall 2022" },
-    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2022" }
+    { course: "Statistics for Digital Humanities", institution: "Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
+    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
+    { course: "Large language model", institution: "Chulalongkorn", period: "Spring 2025", level: "Graduate", program: "Thai" },
+    { course: "Foundation of Programming", institution: "KMITL", period: "Fall 2024", level: "Undergrad", program: "International" },
+    { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Fall 2024", level: "Undergrad", program: "Thai" },
+    { course: "Data Science Programming & Tools", institution: "KMITL", period: "Fall 2024", level: "Graduate", program: "Thai" },
+    { course: "Generative AI", institution: "KMITL", period: "Fall 2024", level: "Graduate", program: "Thai" },
+    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2024", level: "Undergrad", program: "Thai" },
+    { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Spring 2024", level: "Undergrad", program: "Thai" },
+    { course: "Database Programming in Practice", institution: "KMITL", period: "Spring 2024", level: "Undergrad", program: "International" },
+    { course: "Intro to data science", institution: "KMITL", period: "Spring 2024", level: "Undergrad", program: "International" },
+    { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Fall 2023", level: "Undergrad", program: "Thai" },
+    { course: "Foundation of Programming", institution: "KMITL", period: "Fall 2023", level: "Undergrad", program: "International" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Spring 2023", level: "Undergrad", program: "Thai" },
+    { course: "Intro to data science", institution: "KMITL", period: "Spring 2023", level: "Undergrad", program: "International" },
+    { course: "Web mining", institution: "KMITL", period: "Fall 2022", level: "Undergrad", program: "Thai" },
+    { course: "Intro to NLP", institution: "KMITL", period: "Fall 2022", level: "Undergrad", program: "Thai" }
   ];
 
   const talks = [
@@ -72,13 +72,29 @@ const ActivitiesSection = () => {
         <div className="grid gap-3">
           {teachings.map((teaching, index) => (
             <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <div className="flex flex-col gap-3">
                 <div className="flex-1">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">{teaching.course}</h3>
                   <p className="text-gray-600 text-sm sm:text-base">{teaching.institution}</p>
                 </div>
-                <div className="text-gray-500 text-sm sm:text-base font-medium">
-                  {teaching.period}
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-gray-500 text-sm font-medium">
+                    {teaching.period}
+                  </span>
+                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                    teaching.level === 'Graduate' 
+                      ? 'bg-purple-100 text-purple-800' 
+                      : 'bg-blue-100 text-blue-800'
+                  }`}>
+                    {teaching.level}
+                  </span>
+                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                    teaching.program === 'International' 
+                      ? 'bg-green-100 text-green-800' 
+                      : 'bg-orange-100 text-orange-800'
+                  }`}>
+                    {teaching.program}
+                  </span>
                 </div>
               </div>
             </div>
