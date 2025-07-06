@@ -4,73 +4,56 @@ import { FileText, ExternalLink, Calendar, Users, Award, BookOpen } from 'lucide
 const PublicationsSection = () => {
   const publications = [
     {
-      title: "Efficient Fine-tuning of Large Language Models with Parameter-Efficient Methods",
-      authors: "Jakapun Tachaiya, et al.",
-      venue: "International Conference on Learning Representations (ICLR)",
+      title: "Investigating the Influence of Psychologists' Recommendations on Thai Juvenile Court Judgements",
+      authors: "Tachaiya, J., Praingcharoenkit, C., Sangkhao, S., Kawto, W., Rutherford, A. T., & Tachaiya, J.",
+      venue: "2024 21st International Joint Conference on Computer Science and Software Engineering (JCSSE)",
       year: "2024",
       type: "Conference Paper",
       status: "Published",
-      abstract: "We present novel parameter-efficient methods for fine-tuning large language models that achieve comparable performance to full fine-tuning while using significantly fewer parameters.",
-      citations: 45
+      doi: "https://doi.org/10.1109/jcsse61278.2024.10613718",
+      location: "Bangkok, Thailand"
     },
     {
-      title: "Multilingual Neural Machine Translation with Language-Specific Adapters",
-      authors: "Jakapun Tachaiya, et al.",
-      venue: "Association for Computational Linguistics (ACL)",
-      year: "2023",
-      type: "Conference Paper",
-      status: "Published",
-      abstract: "This work introduces language-specific adapters for multilingual neural machine translation, improving translation quality for low-resource languages.",
-      citations: 32
-    },
-    {
-      title: "A Survey of Low-Resource Machine Translation Techniques",
-      authors: "Jakapun Tachaiya, et al.",
-      venue: "Computational Linguistics Journal",
-      year: "2023",
-      type: "Journal Article",
-      status: "Published",
-      abstract: "A comprehensive survey of techniques for machine translation in low-resource language settings, covering data augmentation, transfer learning, and multilingual approaches.",
-      citations: 78
-    },
-    {
-      title: "Cross-lingual Transfer Learning for Natural Language Understanding",
-      authors: "Jakapun Tachaiya, et al.",
-      venue: "Empirical Methods in Natural Language Processing (EMNLP)",
+      title: "IKEA: Unsupervised domain-specific keyword-expansion",
+      authors: "Tachaiya, J., Gharibshah, J., Imani, A., Papalexakis, E. E., & Faloutsos, M.",
+      venue: "2022 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)",
       year: "2022",
       type: "Conference Paper",
       status: "Published",
-      abstract: "We investigate cross-lingual transfer learning techniques for natural language understanding tasks, with focus on Thai language applications.",
-      citations: 56
+      doi: "https://doi.org/10.1109/asonam55973.2022.10088556",
+      location: "Istanbul, Turkey"
     },
     {
-      title: "Interpretable Neural Machine Translation with Attention Mechanisms",
-      authors: "Jakapun Tachaiya, et al.",
-      venue: "Neural Information Processing Systems (NeurIPS)",
-      year: "2022",
+      title: "SentiStance: quantifying the intertwined changes of sentiment and stance in response to an event in online forums",
+      authors: "Tachaiya, J., Gharibshah, J., Irani, A., Esterling, K. M., & Faloutsos, M.",
+      venue: "Proceedings of the 2021 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)",
+      year: "2021",
       type: "Conference Paper",
       status: "Published",
-      abstract: "This paper presents methods for improving interpretability in neural machine translation through enhanced attention mechanisms and visualization techniques.",
-      citations: 41
+      doi: "https://doi.org/10.1145/3467351.3490966",
+      location: "The Hague, Netherlands"
     },
     {
-      title: "Thai Language Processing with Large Language Models",
-      authors: "Jakapun Tachaiya, et al.",
-      venue: "Asian Conference on Natural Language Processing",
-      year: "2024",
+      title: "RAFFMAN: Measuring and Analyzing Sentiment in Online Political Forum Discussions with an Application to the Trump Impeachment",
+      authors: "Tachaiya, J., Gharibshah, J., & Esterling, K. M.",
+      venue: "Proceedings of the International AAAI Conference on Web and Social Media (ICWSM)",
+      year: "2020",
       type: "Conference Paper",
-      status: "Under Review",
-      abstract: "We explore the application of large language models to Thai language processing tasks, including sentiment analysis and question answering.",
-      citations: 0
+      status: "Published",
+      doi: "https://doi.org/10.1609/icwsm.v15i1.18096",
+      location: "Atlanta, Georgia"
+    },
+    {
+      title: "RThread: A thread-centric analysis of security forums",
+      authors: "Tachaiya, J., Gharibshah, J., Papalexakis, E. E., & Faloutsos, M.",
+      venue: "2020 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)",
+      year: "2020",
+      type: "Conference Paper",
+      status: "Published",
+      doi: "https://doi.org/10.1109/asonam49781.2020.9381312",
+      location: "The Hague, Netherlands"
     }
   ];
-
-  const stats = {
-    totalPapers: publications.length,
-    totalCitations: publications.reduce((sum, pub) => sum + pub.citations, 0),
-    hIndex: 5,
-    i10Index: 4
-  };
 
   const getStatusColor = (status: string) => {
     switch (status) {
@@ -162,6 +145,12 @@ const PublicationsSection = () => {
                     <BookOpen size={14} className="flex-shrink-0" />
                     <span className="text-sm sm:text-base font-medium">{pub.venue}</span>
                   </div>
+                  {pub.location && (
+                    <div className="flex items-center gap-2 text-gray-500">
+                      <Calendar size={14} className="flex-shrink-0" />
+                      <span className="text-sm">{pub.location}</span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Tags and Year */}
@@ -176,19 +165,22 @@ const PublicationsSection = () => {
                   <span className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(pub.status)}`}>
                     {pub.status}
                   </span>
-                  {pub.citations > 0 && (
-                    <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium">
-                      {pub.citations} citations
-                    </span>
-                  )}
                 </div>
 
-                {/* Abstract */}
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    {pub.abstract}
-                  </p>
-                </div>
+                {/* DOI Link */}
+                {pub.doi && (
+                  <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">
+                    <a 
+                      href={pub.doi}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center gap-2"
+                    >
+                      <ExternalLink size={14} />
+                      View Publication
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}
