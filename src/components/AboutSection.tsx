@@ -66,13 +66,9 @@ const AboutSection = () => {
                 Core Areas
               </h3>
               <ul className="space-y-2 text-sm sm:text-base text-gray-700">
-                <li>• Natural Language Understanding</li>
-                <li>• Machine Translation</li>
-                <li>• Sentiment Analysis</li>
-                <li>• Question Answering Systems</li>
                 <li>• Large Language Models</li>
-                <li>• Computational Linguistics</li>
-                <li>• Data Mining</li>
+                <li>• Natural Language Understanding</li>
+                <li>• Sentiment Analysis</li>
                 <li>• Machine Learning</li>
                 <li>• Data Science</li>
               </ul>
