@@ -72,6 +72,9 @@ const AboutSection = () => {
                 <li>• Question Answering Systems</li>
                 <li>• Large Language Models</li>
                 <li>• Computational Linguistics</li>
+                <li>• Data Mining</li>
+                <li>• Machine Learning</li>
+                <li>• Data Science</li>
               </ul>
             </div>
             <div>
