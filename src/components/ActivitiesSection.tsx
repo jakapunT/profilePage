@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, DollarSign, Mic, Calendar, Award, Users, BookOpen } from 'lucide-react';
+import { GraduationCap, Mic, Calendar, Award, Users, BookOpen } from 'lucide-react';
 
 const ActivitiesSection = () => {
   const teachings = [
@@ -26,33 +26,6 @@ const ActivitiesSection = () => {
       period: "2018 - 2020",
       students: "25-35 students/semester",
       description: "Advanced topics in computational linguistics, syntax parsing, and semantic analysis."
-    }
-  ];
-
-  const grants = [
-    {
-      title: "Large Language Models for Scientific Literature Analysis",
-      agency: "National Science Foundation",
-      amount: "$1,200,000",
-      period: "2023 - 2026",
-      role: "Principal Investigator",
-      description: "Developing specialized language models for analyzing and extracting insights from scientific publications."
-    },
-    {
-      title: "Multilingual NLP for Educational Applications",
-      agency: "Department of Education",
-      amount: "$800,000",
-      period: "2022 - 2025",
-      role: "Co-Principal Investigator",
-      description: "Creating NLP tools to support multilingual education and language learning platforms."
-    },
-    {
-      title: "Neural Machine Translation for Low-Resource Languages",
-      agency: "Google AI",
-      amount: "$500,000",
-      period: "2021 - 2024",
-      role: "Principal Investigator",
-      description: "Advancing machine translation capabilities for underrepresented languages."
     }
   ];
 
@@ -90,10 +63,10 @@ const ActivitiesSection = () => {
   return (
     <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6 lg:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Teaching, Grants & Speaking</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Teaching & Speaking</h1>
         <div className="w-16 h-1 bg-blue-600 mb-4 lg:mb-6"></div>
         <p className="text-gray-600 text-base sm:text-lg">
-          My contributions to education, research funding, and knowledge sharing through teaching, grants, and speaking engagements.
+          My contributions to education and knowledge sharing through teaching and speaking engagements.
         </p>
       </div>
 
@@ -125,40 +98,6 @@ const ActivitiesSection = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{teaching.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Grants Section */}
-      <div className="mb-8 lg:mb-12">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6 flex items-center gap-2">
-          <DollarSign className="text-green-600" size={20} sm:size={24} />
-          Research Grants
-        </h2>
-        <div className="space-y-4 lg:space-y-6">
-          {grants.map((grant, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 shadow-sm">
-              <div className="flex flex-col gap-4">
-                <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">{grant.title}</h3>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-gray-600 mt-2">
-                    <span className="font-medium text-sm sm:text-base">{grant.agency}</span>
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs sm:text-sm font-medium w-fit">
-                      {grant.amount}
-                    </span>
-                  </div>
-                </div>
-                <div className="grid sm:grid-cols-2 gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600">
-                  <div>
-                    <span className="font-medium">Period:</span> {grant.period}
-                  </div>
-                  <div>
-                    <span className="font-medium">Role:</span> {grant.role}
-                  </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{grant.description}</p>
               </div>
             </div>
           ))}
@@ -204,8 +143,8 @@ const ActivitiesSection = () => {
             <div className="text-gray-600 text-xs sm:text-sm">Students Taught</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-2">$2.5M+</div>
-            <div className="text-gray-600 text-xs sm:text-sm">Research Funding</div>
+            <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-2">25+</div>
+            <div className="text-gray-600 text-xs sm:text-sm">Publications</div>
           </div>
           <div className="text-center">
             <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-2">25+</div>

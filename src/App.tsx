@@ -3,6 +3,7 @@ import { User, Building, BookOpen, FileText, Mail, Github, Linkedin, Twitter, Ma
 import AboutSection from './components/AboutSection';
 import LabsSection from './components/LabsSection';
 import ActivitiesSection from './components/ActivitiesSection';
+import PublicationsSection from './components/PublicationsSection';
 import CVSection from './components/CVSection';
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
   const tabs = [
     { id: 'about', label: 'About', icon: User },
     { id: 'labs', label: 'Research Labs', icon: Building },
-    { id: 'activities', label: 'Teaching & Grants', icon: BookOpen },
+    { id: 'activities', label: 'Teaching', icon: BookOpen },
+    { id: 'publications', label: 'Publications', icon: FileText },
     { id: 'cv', label: 'CV', icon: FileText },
   ];
 
@@ -24,6 +26,8 @@ function App() {
         return <LabsSection />;
       case 'activities':
         return <ActivitiesSection />;
+      case 'publications':
+        return <PublicationsSection />;
       case 'cv':
         return <CVSection />;
       default:
