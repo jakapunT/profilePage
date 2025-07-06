@@ -75,10 +75,12 @@ const ActivitiesSection = () => {
               <div className="flex flex-col gap-3">
                 <div className="flex-1">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900">{teaching.course}</h3>
-                  <p className="text-gray-600 text-sm sm:text-base">{teaching.institution}</p>
                   <div className="flex flex-wrap items-center gap-2 mt-2">
                     <span className="text-gray-500 text-sm font-medium">
                       {teaching.period}
+                    </span>
+                    <span className="text-gray-600 text-sm font-medium">
+                      {teaching.institution}
                     </span>
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                       teaching.level === 'Graduate' 
