@@ -76,7 +76,7 @@ function App() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h1 className="text-xl font-bold text-gray-900 mb-1">Dr. [Your Name]</h1>
+                <h1 className="text-xl font-bold text-gray-900 mb-1">Jakapun Tachaiya</h1>
                 <p className="text-gray-600 text-sm">Natural Language Processing Researcher</p>
               </div>
 
