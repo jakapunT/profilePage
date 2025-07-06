@@ -56,7 +56,7 @@ const AboutSection = () => {
       </div>
 
       {/* Research Interests */}
-      <div className="mb-8 lg:mb-12">
+      <div>
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Research Interests</h2>
         <div className="bg-gray-50 rounded-lg p-4 lg:p-6 border border-gray-200">
           <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
@@ -88,33 +88,6 @@ const AboutSection = () => {
                 <li>• Healthcare NLP</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* News & Updates */}
-      <div>
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Recent News</h2>
-        <div className="space-y-4">
-          <div className="border-l-4 border-blue-600 pl-4 py-2">
-            <p className="text-sm sm:text-base text-gray-700">
-              <span className="font-medium text-gray-900">[Date]:</span> Paper accepted at ICLR 2024: "Efficient Fine-tuning of Large Language Models"
-            </p>
-          </div>
-          <div className="border-l-4 border-green-600 pl-4 py-2">
-            <p className="text-sm sm:text-base text-gray-700">
-              <span className="font-medium text-gray-900">[Date]:</span> Awarded NSF CAREER Award for research in multilingual NLP
-            </p>
-          </div>
-          <div className="border-l-4 border-purple-600 pl-4 py-2">
-            <p className="text-sm sm:text-base text-gray-700">
-              <span className="font-medium text-gray-900">[Date]:</span> Keynote speaker at International Conference on Learning Representations
-            </p>
-          </div>
-          <div className="border-l-4 border-orange-600 pl-4 py-2">
-            <p className="text-sm sm:text-base text-gray-700">
-              <span className="font-medium text-gray-900">[Date]:</span> New collaboration with Google AI on large language model research
-            </p>
           </div>
         </div>
       </div>
