@@ -5,7 +5,7 @@ const PublicationsSection = () => {
   const publications = [
     {
       title: "Investigating the Influence of Psychologists' Recommendations on Thai Juvenile Court Judgements",
-      authors: "Tachaiya, J., Praingcharoenkit, C., Sangkhao, S., Kawto, W., Rutherford, A. T., & Tachaiya, J.",
+      authors: "Praingcharoenkit, C., Sangkhao, S., Kawto, W., Rutherford, A. T., & Tachaiya, J.",
       venue: "2024 21st International Joint Conference on Computer Science and Software Engineering (JCSSE)",
       year: "2024",
       type: "Conference Paper",
