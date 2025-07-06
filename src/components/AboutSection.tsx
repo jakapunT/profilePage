@@ -11,7 +11,7 @@ const AboutSection = () => {
 
       <div className="prose prose-lg max-w-none mb-8 lg:mb-12 text-gray-700 leading-relaxed">
         <p className="text-lg sm:text-xl mb-4 lg:mb-6">
-          I am a faculty member in the Linguistics Department at the Faculty of Arts, Chulalongkorn University. I am fascinated by how computers can be made to understand human language, a task inherently ambiguous and challenging, even among humans. Even when the same sentence is used, we as humans can still misinterpret and misunderstand each other.
+          I am a faculty member in the Linguistics Department at the Faculty of Arts, Chulalongkorn University. I am fascinated by how computers can be made to understand human language, a task inherently ambiguous and challenging, even among humans. Even when the same sentence is used, we as humans can still misinterpret and misunderstand each other!
         </p>
         
         <p className="mb-4 lg:mb-6">
