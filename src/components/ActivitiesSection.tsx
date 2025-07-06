@@ -3,6 +3,7 @@ import { GraduationCap, Mic, Calendar, Award, Users, BookOpen } from 'lucide-rea
 
 const ActivitiesSection = () => {
   const teachings = [
+    { course: "Natural Language Processing", institution: "ISE, Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "International" },
     { course: "Statistics for Digital Humanities", institution: "Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
     { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
     { course: "Large language model", institution: "Chulalongkorn", period: "Spring 2025", level: "Graduate", program: "Thai" },
