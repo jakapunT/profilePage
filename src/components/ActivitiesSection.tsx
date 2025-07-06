@@ -11,7 +11,7 @@ const ActivitiesSection = () => {
     { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Fall 2024", level: "Undergrad", program: "Thai" },
     { course: "Data Science Programming & Tools", institution: "KMITL", period: "Fall 2024", level: "Graduate", program: "Thai" },
     { course: "Generative AI", institution: "KMITL", period: "Fall 2024", level: "Graduate", program: "Thai" },
-    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2024", level: "Undergrad", program: "Thai" },
+    { course: "Programming for Natural Language Processing", institution: "LangTech, Chulalongkorn", period: "Fall 2024", level: "Undergrad", program: "Thai" },
     { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Spring 2024", level: "Undergrad", program: "Thai" },
     { course: "Database Programming in Practice", institution: "KMITL", period: "Spring 2024", level: "Undergrad", program: "International" },
     { course: "Intro to data science", institution: "KMITL", period: "Spring 2024", level: "Undergrad", program: "International" },
