@@ -132,7 +132,6 @@ const PublicationsSection = () => {
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 leading-tight flex-1">
                     {pub.title}
                   </h3>
-                  <ExternalLink className="text-gray-400 hover:text-gray-600 cursor-pointer flex-shrink-0 mt-1" size={16} />
                 </div>
 
                 {/* Authors and Venue */}
@@ -168,19 +167,6 @@ const PublicationsSection = () => {
                 </div>
 
                 {/* DOI Link */}
-                {pub.doi && (
-                  <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">
-                    <a 
-                      href={pub.doi}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center gap-2"
-                    >
-                      <ExternalLink size={14} />
-                      View Publication
-                    </a>
-                  </div>
-                )}
               </div>
             </div>
           ))}
