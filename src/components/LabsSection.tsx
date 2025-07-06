@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building, Calendar, ExternalLink, Users, MapPin } from 'lucide-react';
+import { Building, Calendar, ExternalLink, Users, MapPin, GraduationCap, BookOpen, Award } from 'lucide-react';
 
 const LabsSection = () => {
   const labs = [
@@ -52,17 +52,83 @@ const LabsSection = () => {
 
   return (
     <div className="p-4 sm:p-6 lg:p-8">
-      <div className="mb-6 lg:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">NLP Research Lab @Chula </h1>
-        <p>Department of Linguistics, Faculty of Arts, Chulalongkorn University</p>
-        <div className="w-16 h-1 bg-blue-600 mb-4 lg:mb-6"></div>
-        <p className="text-gray-600 text-base sm:text-lg">
-         The Natural Language Processing Lab focuses on advancing Thai NLP infrastructure, including automated linguistic analysis and the development of Large Language Models specifically for the Thai language.    </p>
-        <p>Prospective Master's students interested in joining the lab are encouraged to consider the Linguistics program's "แผน ข" for its flexibility. This program provides comprehensive training, from foundational programming to the implementation of neural language models. A sample study plan is available for reference.</p>
+      {/* Enhanced Header Section */}
+      <div className="mb-8 lg:mb-12 relative">
+        {/* Background decoration */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl opacity-50 -z-10"></div>
+        
+        <div className="relative p-6 lg:p-8">
+          {/* Main Title */}
+          <div className="text-center mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 tracking-tight">
+              NLP Research Lab
+              <span className="text-blue-600">@Chula</span>
+            </h1>
+            
+            {/* Institution Badge */}
+            <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200 mb-6">
+              <Building size={16} className="text-blue-600" />
+              <span className="text-sm font-medium text-gray-700">
+                Department of Linguistics, Faculty of Arts, Chulalongkorn University
+              </span>
+            </div>
+            
+            {/* Decorative line */}
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"></div>
+            </div>
+          </div>
 
-        <p>For those pursuing a PhD, a strong background in programming and machine learning is generally expected, though direct discussion via email for potential projects is also welcome.</p>
+          {/* Description Paragraphs with better spacing */}
+          <div className="max-w-4xl mx-auto space-y-6 text-center">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-light">
+              The Natural Language Processing Lab focuses on advancing Thai NLP infrastructure, 
+              including automated linguistic analysis and the development of Large Language Models 
+              specifically for the Thai language.
+            </p>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 shadow-sm">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <GraduationCap className="text-green-600" size={16} />
+                </div>
+                <div className="text-left">
+                  <h3 className="font-semibold text-gray-900 mb-2">Master's Program</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Prospective Master's students interested in joining the lab are encouraged to consider 
+                    the Linguistics program's <span className="font-medium text-blue-600">"แผน ข"</span> for its flexibility. 
+                    This program provides comprehensive training, from foundational programming to the 
+                    implementation of neural language models. A sample study plan is available for reference.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 shadow-sm">
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Award className="text-purple-600" size={16} />
+                </div>
+                <div className="text-left">
+                  <h3 className="font-semibold text-gray-900 mb-2">PhD Program</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    For those pursuing a PhD, a strong background in programming and machine learning 
+                    is generally expected, though direct discussion via email for potential projects 
+                    is also welcome.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact CTA */}
+          <div className="text-center mt-8">
+            <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors cursor-pointer shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+              <BookOpen size={16} />
+              <span className="font-medium">Explore Research Opportunities</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="space-y-6 lg:space-y-8">
