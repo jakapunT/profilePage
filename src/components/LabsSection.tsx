@@ -98,7 +98,15 @@ const LabsSection = () => {
                     Prospective Master's students interested in joining the lab are encouraged to consider 
                     the Linguistics program's <span className="font-medium text-blue-600">"แผน ข"</span> for its flexibility. 
                     This program provides comprehensive training, from foundational programming to the 
-                    implementation of neural language models. A sample study plan is available for reference.
+                    implementation of neural language models. A sample study plan is available for{' '}
+                    <a 
+                      href="https://www.arts.chula.ac.th/ling/index.html" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 underline font-medium transition-colors"
+                    >
+                      reference
+                    </a>.
                   </p>
                 </div>
               </div>
