@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Award, Users, Globe, BookOpen, GraduationCap } from 'lucide-react';
+import { Brain, Users, Globe, BookOpen, GraduationCap } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -15,16 +15,14 @@ const AboutSection = () => {
         </p>
         
         <p className="mb-4 lg:mb-6">
-    This deep interest drives my work as a dedicated researcher with a primary focus on Natural Language Processing (NLP), the technology enabling computers to comprehend and execute language-based tasks such as question answering, text translation, and large-scale text analysis. My current research interests revolve around developing NLP with Large Language Models (LLMs), specifically focusing on the Thai language. Please feel free to contact me if you are interested in a collaboration in this related field.
+          This deep interest drives my work as a dedicated researcher with a primary focus on Natural Language Processing (NLP), the technology enabling computers to comprehend and execute language-based tasks such as question answering, text translation, and large-scale text analysis. My current research interests revolve around developing NLP with Large Language Models (LLMs), specifically focusing on the Thai language. Please feel free to contact me if you are interested in a collaboration in this related field.
         </p>
-        
- 
       </div>
 
       {/* Research Highlights */}
       <div className="mb-8 lg:mb-12">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">Research Highlights</h2>
-        <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
+        <div className="grid md:grid-cols-3 gap-4 lg:gap-6">
           <div className="bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -33,16 +31,6 @@ const AboutSection = () => {
               <h3 className="text-base sm:text-lg font-semibold text-gray-900">NLP Research</h3>
             </div>
             <p className="text-sm sm:text-base text-gray-600">Advancing natural language understanding and generation through novel architectures and methodologies.</p>
-          </div>
-
-          <div className="bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                <Award className="text-green-600" size={20} />
-              </div>
-              <h3 className="text-base sm:text-lg font-semibold text-gray-900">Publications</h3>
-            </div>
-            <p className="text-sm sm:text-base text-gray-600">[X]+ papers published in top-tier conferences including ACL, EMNLP, and ICLR.</p>
           </div>
 
           <div className="bg-white border border-gray-200 rounded-lg p-4 lg:p-6 shadow-sm">
