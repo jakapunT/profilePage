@@ -17,7 +17,7 @@ const CVSection = () => {
       location: "USA"
     },
     {
-      degree: "B.S. in Computer Engineering",
+      degree: "B.E. in Computer Engineering",
       institution: "Chulalongkorn University",
       period: "2009 - 2012",
       location: "Thailand"
