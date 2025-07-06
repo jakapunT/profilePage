@@ -70,7 +70,6 @@ const AboutSection = () => {
                 <li>• Retrieval-Augmented Generation (RAG)</li>
                 <li>• Sentiment Analysis</li>
                 <li>• Social trend and behavior analysis</li>
-                <li>• Machine Learning</li>
                 <li>• Data Science</li>
  
                 
