@@ -4,9 +4,9 @@ import { GraduationCap, Mic, Calendar, Award, Users, BookOpen } from 'lucide-rea
 const ActivitiesSection = () => {
   const teachings = [
     { course: "Natural Language Processing", institution: "ISE, Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "International" },
-    { course: "Statistics for Digital Humanities", institution: "Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
-    { course: "Programming for Natural Language Processing", institution: "Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
-    { course: "Large language model", institution: "Chulalongkorn", period: "Spring 2025", level: "Graduate", program: "Thai" },
+    { course: "Statistics for Digital Humanities", institution: "LangTech, Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
+    { course: "Programming for Natural Language Processing", institution: "LangTech, Chulalongkorn", period: "Fall 2025", level: "Undergrad", program: "Thai" },
+    { course: "Large language model", institution: "LangTech, Chulalongkorn", period: "Spring 2025", level: "Graduate", program: "Thai" },
     { course: "Foundation of Programming", institution: "KMITL", period: "Fall 2024", level: "Undergrad", program: "International" },
     { course: "Intro to Natural Language Processing", institution: "KMITL", period: "Fall 2024", level: "Undergrad", program: "Thai" },
     { course: "Data Science Programming & Tools", institution: "KMITL", period: "Fall 2024", level: "Graduate", program: "Thai" },
