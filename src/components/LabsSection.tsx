@@ -18,10 +18,8 @@ const LabsSection = () => {
     { name: "Chadathip Prangkulcharoenkit ", program: "ComSci, KMITL", year: "2023", note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
     { name: "Sirirat Sanghkao", program: "ComSci, KMITL", year: "2023",note:"Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" },
     { name: "Wanwisa Kawto", program: "ComSci, KMITL", year: "2023", note:"Automated Expert Recommendation Generation for Thai Juvenile Cases using Natural Language Processing"  },
-    { name: "Tanawat Kaewmanee", program: "LangTech", year: "2023" ,note:"Headlines Generation for Thai News: Engaging Readers with AI-Generated Titles with Emotions"  },
-    { name: "Tuntorn Chongsakul", program: "LangTech", year: "2023",note:"Headlines Generation for Thai News: Engaging Readers with AI-Generated Titles with Emotions"  },
-    { name: "Pattarawat Chormai", program: "Researcher", year: "2018", note: "now at PhD Program at Max-Planck School of Cognition" },
-
+    { name: "Tanawat Kaewmanee", program: "ComSci, KMITL", year: "2023" ,note:"Headlines Generation for Thai News: Engaging Readers with AI-Generated Titles with Emotions"  },
+    { name: "Tuntorn Chongsakul", program: "ComSci, KMITL", year: "2023",note:"Headlines Generation for Thai News: Engaging Readers with AI-Generated Titles with Emotions"  },
   ];
 
   return (
