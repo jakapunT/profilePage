@@ -43,7 +43,7 @@ function App() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-8 rounded-lg overflow-hidden shadow-md">
               <img 
-                src="/IMG_5438.jpg" 
+                src="IMG_5438.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
@@ -71,7 +71,7 @@ function App() {
               <div className="text-center mb-6">
                 <div className="w-32 h-40 mx-auto rounded-lg overflow-hidden shadow-lg mb-4">
                   <img 
-                    src="/IMG_5438.jpg" 
+                    src="IMG_5438.jpg" 
                     alt="Profile" 
                     className="w-full h-full object-cover"
                   />
@@ -98,7 +98,7 @@ function App() {
                 </a>
               </div>
             </div>
-            
+
               {/* Navigation */}
               <nav className="space-y-1">
                 {tabs.map((tab) => {
@@ -135,7 +135,7 @@ function App() {
             <div className="text-center mb-6">
               <div className="w-48 h-60 mx-auto rounded-lg overflow-hidden shadow-lg mb-4 transition-transform duration-300 hover:scale-105 ring-4 ring-white">
                 <img 
-                  src="/IMG_5438.jpg" 
+                  src="IMG_5438.jpg" 
                   alt="Profile" 
                   className="w-full h-full object-cover"
                 />
