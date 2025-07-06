@@ -53,7 +53,7 @@ const LabsSection = () => {
   return (
     <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6 lg:mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Research Labs & Affiliations</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">NLP Research Lab @Chula </h1>
         <div className="w-16 h-1 bg-blue-600 mb-4 lg:mb-6"></div>
         <p className="text-gray-600 text-base sm:text-lg">
           My research journey across leading institutions and laboratories, contributing to advancing the field of Natural Language Processing.
