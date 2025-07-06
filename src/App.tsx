@@ -49,7 +49,7 @@ function App() {
               />
             </div>
             <div>
-              <h1 className="text-lg font-bold text-gray-900">Dr. [Your Name]</h1>
+              <h1 className="text-lg font-bold text-gray-900">jakapun Tachaiya</h1>
               <p className="text-xs text-gray-600">NLP Researcher</p>
             </div>
           </div>
@@ -80,41 +80,25 @@ function App() {
                 <p className="text-gray-600 text-sm">Natural Language Processing Researcher</p>
               </div>
 
-              {/* Contact Info */}
-              <div className="space-y-3 mb-6 text-sm">
-                <div className="flex items-center gap-3 text-gray-700">
-                  <Home size={16} className="text-gray-500 flex-shrink-0" />
-                  <span>[Your Institution]</span>
-                </div>
-                <div className="flex items-center gap-3 text-gray-700">
-                  <MapPin size={16} className="text-gray-500 flex-shrink-0" />
-                  <span>[Your City, Country]</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail size={16} className="text-gray-500 flex-shrink-0" />
-                  <a href="mailto:your.email@university.edu" className="text-blue-600 hover:text-blue-800 break-all">
-                    your.email@university.edu
-                  </a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Phone size={16} className="text-gray-500 flex-shrink-0" />
-                  <span className="text-gray-700">+1 (555) 123-4567</span>
-                </div>
-              </div>
 
-              {/* Social Links */}
-              <div className="flex gap-4 mb-6 justify-center">
-                <a href="https://github.com/yourusername" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  <Github size={20} />
-                </a>
-                <a href="https://linkedin.com/in/yourprofile" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  <Linkedin size={20} />
-                </a>
-                <a href="https://twitter.com/yourusername" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  <Twitter size={20} />
+            {/* Contact Info */}
+            <div className="space-y-3 mb-8 text-sm">
+              <div className="flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors">
+                <Home size={16} className="text-gray-500" />
+                <span>Linguistic Department, Chulalongkorn University</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-700 hover:text-gray-900 transition-colors">
+                <MapPin size={16} className="text-gray-500" />
+                <span>Bangkok, Thailand</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail size={16} className="text-gray-500" />
+                <a href="mailto:your.email@university.edu" className="text-blue-600 hover:text-blue-800 transition-colors">
+                 jakapun.t@chula.ac.th
                 </a>
               </div>
-
+            </div>
+            
               {/* Navigation */}
               <nav className="space-y-1">
                 {tabs.map((tab) => {
